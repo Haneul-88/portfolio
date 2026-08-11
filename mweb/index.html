@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NSMKLY log</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-inner">
+                <a class="brand" href="https://www.nsmklylog.io"><span>NSMKLYlog.io</span></a>
+
+                <div class="nav-links" aria-label="Main navigation">
+                    <a href="#about">ABOUT ME</a>
+                    <a href="projects.html">PROJECTS</a>
+                    <a href="#contact">CONTACT</a>
+                    <button id="theme-toggle" class="icon" aria-label="Toggle theme">
+                        <img src="moon.svg" alt="Toggle Theme">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="profile">
+            <img src="profile.JPG" alt="Profile photo">
+            <div class="profile-text">
+                <h1 class="wave"><span>HELLO! I'm Nang Soe Myat Kala Yar.</span></h1>
+                <p class="subhead">Welcome to my digital playground! I'm creating a new web experience as I learn HTML, CSS, and Python.</p>
+            </div>
+        </section>
+        <div>
+        <section id="about" class="info-section">
+            <h2>About Me</h2>
+            <p>I'm an aspiring tech learner with a strong interest in <strong><em>Cybersecurity</em></strong> and <strong>Cloud Security</strong>. 
+    Currently, I'm building a solid foundation in web development and programming by learning <strong>HTML, CSS</strong>,while studying for the <strong>CompTIA A+ certification</strong> to master 
+    IT fundamentals, core networking, and hardware/software troubleshooting.</p>
+            <p>Outside of tech, I enjoy mobile photography—capturing landscapes, skies, and animals. This website is where I share my 
+    projects and showcase the things that inspire me.</p>
+        </section>
+         </div>
+        <section id="projects" class="info-section">
+            <h2>Projects</h2>
+            <p>These are my current projects. I am continuously learning and building new things, so check back for updates!</p>
+            <a href="projects.html" class="button">View Projects</a>
+        </section>
+
+        <section id="contact" class="info-section">
+            <h2>Let's connect</h2>
+  <p>Have a question or want to collaborate? Send a message directly below!</p>
+  <div class="email"> 
+  <img class="email-icon" src="email.svg" alt="email"> 
+  <a href="mailto:nsmkalayar@gmail.com">nsmkalayar@gmail.com</a> 
+  </div>
+
+  
+            
+        </section>
+    </main>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+        });
+    </script>
+
+ <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>NSMKLY</h3>
+      <p>Student Developer learning HTML, CSS & Python. Open to projects and learning opportunities.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 NSMKLY. Built from scratch with HTML & CSS.</p>
+  </div>
+</div>
+</footer>
+</body>
+</html>
+
